@@ -1,6 +1,7 @@
 ---
 title: Releases
 authors: oschreib
+breadcrumbs_hide: True
 ---
 
 # Releases

@@ -25,7 +25,9 @@
         - frag_title = fallback_title
 
       -# Display the path, linking it, if applicable
-      - if matches_current_page || frag_page.nil?
+      - if frag_page && frag_page.data[:breadcrumbs_hide]
+        %li= frag_title
+      - elsif matches_current_page || frag_page.nil?
         %li.active= frag_title
       - else
         %li= link_to frag_title, frag_link
